@@ -7,3 +7,13 @@ num2 = list(map(int, input().split()))
 # ******************************
 
 # print ('True') or print ('False')
+
+subset = True
+
+for i in range(len(num2)):
+    try:
+        num1.index(num2[i])
+    except ValueError:
+        subset = False
+
+print(subset)
